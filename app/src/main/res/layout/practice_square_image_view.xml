@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hencoder.hencoderpracticelayout1.common.Common01AdjustablePanel xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd">
+
+    <FrameLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="#2B2B2B">
+
+        <com.hencoder.hencoderpracticelayout1.practice.Practice01SquareImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_rengwuxian" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/adjust_frame"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:id="@+id/widthBar"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/width"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/heightBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:id="@+id/heightBar"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/height"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.hencoder.hencoderpracticelayout1.common.Common01AdjustablePanel>
